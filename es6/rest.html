@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <script>
+       function fruits(a,...z)
+       {
+           console.warn("fruits",z)
+           z[4]();
+       }
+       function test()
+       {
+        console.log("jn");
+       }
+       fruits('apple','banana','kiwi','orange','papaya',test);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Arrow function</h1>
+    <script>
+    
+    let item={
+        name:"anil",
+        getName:function()
+        {
+            console.warn("normal",this)
+        },
+        getNameArrow:()=>{
+            console.warn("arrow",this)
+        }
+    }
+    let item2 = {
+        name : "Manish",
+        getName2 : function(){
+            console.log(this.getName2);
+        },
+        getName3 : () => {
+            console.log(this);
+        }
+    }
+
+
+    item2.getName2();
+    item2.getName3();
+
+        
+    </script>
+</body>
+
+</html>
